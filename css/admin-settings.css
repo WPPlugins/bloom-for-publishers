@@ -1,0 +1,319 @@
+.blm-settings-section {
+float: left;
+width: 100%;
+margin: 30px 0;
+padding-top: 30px;
+border-top: 1px solid #e1e1e1;
+}
+
+.blm-settings-section[data-tab] {
+width: 96%;
+margin: 30px 2%;
+padding: 0;
+border-top: 0;
+display: none;
+}
+
+form[data-tab="general"] .blm-settings-section[data-tab="general"] {display: block;}
+form[data-tab="search"] .blm-settings-section[data-tab="search"] {display: block;}
+form[data-tab="map"] .blm-settings-section[data-tab="map"] {display: block;}
+form[data-tab="buttons"] .blm-settings-section[data-tab="buttons"] {display: block;}
+form[data-tab="post_types"] .blm-settings-section[data-tab="post_types"] {display: block;}
+
+.blm-settings-section #blm-location-results {
+display: none !important;
+}
+
+.blm-settings-section[data-tab="map"][data-enabled="false"] .blm-append-map-field {
+display: none;
+}
+
+.blm-settings-section h2 {
+clear: both;
+margin-bottom: 5px;
+}
+
+.blm-settings-section th h2 {
+margin: -3px 0 0 0;
+}
+
+.blm-settings-section-description {
+float: left;
+width: auto;
+margin-bottom: 20px;
+}
+
+table.form-table th {
+font-weight: 400;
+}
+
+table.form-table th span {
+font-size: 12px;
+}
+
+.blm-settings-section[data-tab="post_types"] table.form-table th span {
+font-weight: normal;
+font-style: italic;
+margin-left: 5px;
+}
+
+table.form-table th strong {
+float: left;
+width: auto;
+}
+
+table.form-table td {
+vertical-align:top;
+}
+
+table.form-table td input {
+float: left;
+width: 450px;
+margin: 0;
+}
+
+.blm-settings-section[data-tab="post_types"] table.form-table td input {
+width: 70px;
+}
+
+table.form-table td .blm-field-note {
+float: left;
+}
+
+.blm-field-message {
+float: left;
+width: auto;
+height: 25px;
+padding: 0 10px;
+font-size: 11px;
+line-height: 27px;
+color: #575757;
+border-left: 4px solid #b06060;
+background: #fff;
+}
+
+.blm-field-message span:after {
+content: ":  ";
+}
+
+.blm-field-note[data-code="1"] .blm-field-message {
+border-left: 4px solid #75BFA7;
+}
+
+.blm-field-note[data-code="1"] .blm-field-message span:after,
+[data-field="google-api-key"] .blm-field-note .blm-field-message span:after {
+content: "";
+}
+
+[data-field="google-api-key"] .blm-field-note .blm-field-message #blm-field-note-message span {display: none;}
+[data-field="google-api-key"] .blm-field-note .blm-field-message #blm-field-note-message #blm-field-note-message-empty {display: block;}
+[data-field="google-api-key"] .blm-field-note[data-code="1"] .blm-field-message #blm-field-note-message-valid {display: block;}
+[data-field="google-api-key"] .blm-field-note[data-code="2"] .blm-field-message #blm-field-note-message-invalid {display: block;}
+[data-field="google-api-key"] .blm-field-note[data-code="3"] .blm-field-message #blm-field-note-message-validating {display: block;}
+
+.blm-field-note[data-code="1"] .blm-field-link {
+display: none;
+}
+
+.form-table th a.thickbox,
+.form-table a.blm-external-link {
+float: left;
+width: 15px;
+height: 15px;
+background: transparent url('../images/icon-info.png') top left no-repeat;
+margin: 1px 0 0 10px;
+outline: none !important;
+}
+
+#blm-settings-section-map .form-table select {
+float: left;
+}
+
+#blm-settings-section-map .form-table th a.thickbox {
+position: relative;
+top: 7px;
+}
+
+#TB_ajaxContent {
+width: 80% !important;
+padding: 0 10% !important;
+}
+
+#TB_title {
+background: none !important;
+border: 0 !important;
+}
+
+/*Shortcode*/
+
+.blm-shortcode {
+float: left;
+width: 450px;
+padding: 20px;
+border: 1px solid #e1e1e1;
+}
+
+.blm-shortcode h4 {
+font-size: 14px;
+line-height: 14px;
+margin: 0 0 10px 0;
+}
+
+.blm-shortcode-example {
+font-size: 12px;
+line-height: 12px;
+margin-bottom: 20px;
+}
+
+.blm-shortcode-code {
+background: #f9f9f9;
+padding: 5px 10px;
+font-family: Courier New, monospace, sans-serif;
+word-wrap: break-word;
+}
+
+.blm-shortcode-options {
+float: left;
+clear: left;
+width: 100%;
+}
+
+.blm-shortcode-options p {
+margin: 20px 0 0 0;
+}
+
+.blm-shortcode-options ul {
+margin: 10px 0 0 0;
+}
+
+.blm-shortcode-options li {
+margin-left: 20px;
+list-style-type: disc;
+}
+
+#blm-banner-premade p,
+#blm-banner-premade select {
+float: left;
+width: auto;
+display: inline;
+}
+
+#blm-banner-premade select {
+margin: 15px 0 0 15px;
+}
+
+.blm-shortcode-preview {
+float: left;
+width: auto;
+margin-left: 40px;
+}
+
+/*Buttons*/
+
+blm-button {
+position: relative;
+float: left;
+display: inline-block;
+height: 35px;
+margin: 45px 30px 0 0;
+padding: 0;
+border: 0;
+overflow: hidden;
+outline: 0;
+cursor: pointer;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-text-size-adjust: none;
+-ms-text-size-adjust: none;
+-webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+}
+
+blm-button:hover {
+-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
+-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
+box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
+}
+
+blm-button:before {
+position: absolute;
+top: 12px;
+left: 12px;
+font-family: 'Open Sans', Arial, Sans-Serif;
+font-size: 13px;
+line-height: 13px;
+letter-spacing: normal;
+font-weight: 700;
+font-style: normal;
+vertical-align: baseline;
+}
+
+blm-button:after {
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+width: 35px;
+height: 35px;
+-webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+-moz-box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+}
+
+blm-button[data-type="search"] {
+width: 165px;
+}
+
+blm-button[data-style="light"] {
+background: #fff;
+color: #37ae6e;
+}
+
+blm-button[data-style="dark"] {
+background: #37ae6e;
+color: #fff;
+}
+
+blm-button[data-type="search"]:before {
+content: "SEARCH NEARBY";
+}
+
+blm-button[data-type="search"][data-style="light"]:after {
+background: #f1f1f1 url('https://api.bloom.li/static/nearby/search/images/buttons/blm-icon-search-green.png') center center no-repeat;
+}
+
+blm-button[data-type="search"][data-style="dark"]:after {
+background: #2f945e url('https://api.bloom.li/static/nearby/search/images/buttons/blm-icon-search-white.png') center center no-repeat;
+}
+
+blm-button[data-type="search"][data-style]:after {
+background-size: 16px 20px;
+}
+
+blm-button[data-type="map"] {
+width: 128px;
+}
+
+blm-button[data-type="map"]:before {
+content: "OPEN MAP";
+}
+
+blm-button[data-type="map"][data-style="light"]:after {
+background: #f1f1f1 url('https://api.bloom.li/static/nearby/search/images/buttons/blm-icon-geotag-green.png') center center no-repeat;
+}
+
+blm-button[data-type="map"][data-style="dark"]:after {
+background: #2f945e url('https://api.bloom.li/static/nearby/search/images/buttons/blm-icon-geotag-white.png') center center no-repeat;
+}
+
+blm-button[data-type="map"][data-style]:after {
+background-size: 11px 20px;
+}
